@@ -1,0 +1,8 @@
+include ':login-bridge'
+include ':login'
+include ':base'
+include ':splash-bridge'
+include ':splash'
+include ':app'
+
+rootProject.name = "Nekogengo Bootstrap"

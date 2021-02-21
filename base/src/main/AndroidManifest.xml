@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nekogengo.base">
+    <application android:theme="@style/AppTheme">
+        <activity android:name=".BaseActivity" />
+    </application>
+</manifest>
