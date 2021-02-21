@@ -1,9 +1,14 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
+apply from: "${rootDir}/library-common.gradle"
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation project(":network-bridge")
 }
 
 sourceCompatibility = "1.8"

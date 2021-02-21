@@ -1,0 +1,6 @@
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation "com.google.dagger:hilt-core:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version" // or kapt
+}

@@ -1,3 +1,5 @@
+include ':network'
+include ':network-bridge'
 include ':login-bridge'
 include ':login'
 include ':base'

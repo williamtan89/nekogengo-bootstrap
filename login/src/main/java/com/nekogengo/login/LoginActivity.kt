@@ -1,6 +1,6 @@
 package com.nekogengo.login
 
-import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import com.nekogengo.base.BaseActivity
@@ -10,10 +10,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class LoginActivity: BaseActivity() {
     companion object {
         fun start(
-            activity: Activity
+            context: Context
         ) {
-            activity.startActivity(
-                Intent(activity, LoginActivity::class.java)
+            context.startActivity(
+                Intent(context, LoginActivity::class.java).also {
+                    it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
             )
         }
     }

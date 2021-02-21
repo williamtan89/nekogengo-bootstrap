@@ -1,13 +1,13 @@
 package com.nekogengo.login
 
-import android.app.Activity
+import android.content.Context
 import com.nekogengo.login_bridge.LoginBridge
 import javax.inject.Inject
 
 class LoginBridgeImpl @Inject constructor(
-    private val activity: Activity
+    private val context: Context
 ): LoginBridge {
     override fun start() {
-        LoginActivity.start(activity = activity)
+        LoginActivity.start(context)
     }
 }
